@@ -1,0 +1,107 @@
+*{
+    font-family: "DM Sans", "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif, HYWenHei-GEW !important;
+}   
+
+body {
+    background-color: #eaf6fc; 
+    background-image: radial-gradient(circle, #dde8f0 2px, transparent 3px);
+    background-size:  25.5px 23px;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.menu-social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: end;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+.menu-social a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+#header-cuadrado{
+  margin: 0 7px;
+  width: 5px;
+  height: 5px;
+  transform: rotateZ(45deg);
+  border: 2px solid black;
+  background-color:  #ffd6e9;
+  display: inline-block;
+  border-radius: 1px;
+ 
+}
+
+.icono-colgante {
+  position: relative; 
+  width: 40px;  
+  height: 60px; 
+
+}
+
+
+.escudo-superior, .circulo-inferior, .diamante-rosa {
+  border: 2px solid #333; 
+}
+
+
+.linea-conector {
+  position: absolute;
+  width: 2px; 
+  height: 35px; 
+  background-color: #333;
+  top: 14px; 
+  left: 50%; 
+  transform: translateX(-50%);
+  z-index: 1; 
+}
+
+.escudo-superior {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #cffafe; 
+
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1; 
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.diamante-rosa {
+  width: 5px;
+  height: 5px;
+  background-color: #ffd6e9; 
+  transform: rotate(45deg); 
+  margin-top: -2px; 
+}
+
+
+.circulo-inferior {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: #fcd34d; 
+  border-radius: 50%;
+  bottom: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; 
+}
