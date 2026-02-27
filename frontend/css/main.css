@@ -1,0 +1,227 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+  
+}
+
+.notes__container{
+    display: flex;
+    background-color: #fff;
+    width: 700px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    min-height: 480px;
+    box-shadow: #000000 4px 4px 1px;
+    flex-direction: column;
+    
+    
+  
+}
+.container__mark-all{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 700px;
+    border-bottom: 2px solid #333;
+
+}
+.container__button{
+    display: none;
+
+}
+.button-mark-all{
+    text-decoration:none;
+    border: none;
+    color:#333;
+    background-color: #8cd4cb;
+    width: 150px;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-right: #333 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container__mark-all p{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+.counter__container{
+    display: flex;
+    margin-top: auto;
+   
+    border-top: 2px solid #333;
+    width: 700px;
+    height: 40px;
+   
+   
+ 
+
+
+}
+
+.empty-state{
+    display: none;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 20px;
+  
+
+    
+
+
+}
+
+.usage-tips-list li{
+    list-style: none;
+     margin-bottom: 15px
+
+}
+
+
+
+.mi-checkbox-personalizado {
+    display: flex;
+    align-items: center;
+   
+    
+}
+
+
+.checkbox-oculto {
+    display: none;
+}
+
+
+.icono-checkbox__container {
+    width: 26px; 
+    height: 26px;
+    border: 2px solid #000000;
+    background-color: #fff;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+}
+
+
+.icono-checkbox {
+    width: 27px; 
+    height: auto;
+     margin-left: 5px;
+    opacity: 0; 
+  
+}
+
+
+
+
+.checkbox-oculto:checked + .icono-checkbox__container  {
+    background-color: #8cd4cb; 
+}
+
+
+.checkbox-oculto:checked + .icono-checkbox__container .icono-checkbox {
+    opacity: 1;
+  
+}
+
+
+.todo-list{
+    padding: 10px 30px;
+   
+    
+    
+  
+}
+
+.element__todo-list{
+     height: 60px;
+    padding: 0 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: #f9f3e5;
+    margin: 12px;
+    box-shadow: 4px 4px 1px;
+    transition: 0.5s ;
+    
+
+}
+.btn-eliminar{
+    border: 2px black solid;
+    padding: 2px 2px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.element__todo-list span{
+    width: 500px;
+}
+.element__todo-list:has(.checkbox-oculto:checked){
+    background-color: #d0f4f0;
+}
+
+.element__todo-list:hover{
+    box-shadow: none;
+    transition: 0.5s ;
+
+}
+
+
+.element__todo-list.editing {
+  flex-direction: column;
+  align-items: stretch;
+  height: auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.element__todo-list.editing .edit-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f9f3e5;
+  padding: 10px;
+
+}
+
+.element__todo-list.editing .edit-bottom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+
+.element__todo-list.editing .edit-input {
+  flex: 1;
+  height: 36px;
+  border:none;
+
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.btn-guardar { 
+    border: 2px solid #333; 
+    border-radius: 50%; 
+    padding: 6px; 
+    background: #f3c7d3; 
+    cursor: pointer; 
+    }
+
+    .element__todo-list.editing .edit-input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
